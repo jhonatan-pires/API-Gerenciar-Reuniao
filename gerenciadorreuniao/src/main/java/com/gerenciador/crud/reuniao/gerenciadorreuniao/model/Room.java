@@ -22,7 +22,7 @@ public class Room {
 
     }
 
-    public Room(Long id, String name, String Date, String startHour, String endHour){
+    public Room(Long id, String name, String date, String startHour, String endHour){
         this.id=id;
         this.name=name;
         this.date=date;
@@ -49,7 +49,7 @@ public class Room {
         this.name = name;
     }
 
-    @Column(name="name", nullable = false)
+    @Column(name="date", nullable = false)
     public String getDate () {
         return date;
     }
@@ -57,7 +57,7 @@ public class Room {
     public void setDate (String date) {
         this.date = date;
     }
-    @Column(name="starHour", nullable = false)
+    @Column(name="startHour", nullable = false)
     public String getStartHour () {
         return startHour;
     }
